@@ -1,3 +1,23 @@
+# 🍅 Pomodoro Clock with React
+
+Welcome to the Pomodoro Clock GitHub repository! In this project, we build a Pomodoro clock/timer using the JavaScript framework React with Hooks especially the Context API and the useContext Hook. The application features smooth animations provided by the React Countdown Circle Timer.
+
+## Overview
+
+- **Introduction**: A quick overview of the Pomodoro clock application.
+- **Cleanup**: Removal of default files and code to start with a clean slate.
+- **Button Component**: Creating the first React component responsible for buttons.
+- **Setting Component**: Development of the component responsible for setting the timer.
+- **Animation Component**: Integration of the `react-countdown-circle-timer` package for animated countdown circles.
+- **SettingsContext**: Creation of a state management component using the Context Hook.
+- **Using SettingsContext**: Distributing information to other components using the context.
+- **Debugging Package**: Fixing the NaN error and addressing issues with circle animation.
+- **Running Function onload**: Utilizing the `useEffect` hook to run functions once the React component has mounted.
+- **Outro**: A final overview of the application.
+
+## Watch Demo:
+https://github.com/taha007860/Registration-Form/assets/96583299/8cb14380-517c-4a5b-b953-963fb9ff3d05
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
