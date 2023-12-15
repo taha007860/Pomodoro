@@ -6,11 +6,10 @@ Welcome to the Pomodoro Clock GitHub repository! In this project, we build a Pom
 
 - **Introduction**: A quick overview of the Pomodoro clock application.
 - **Cleanup**: Removal of default files and code to start with a clean slate.
-- **Button Component**: Creating the first React component responsible for buttons.
 - **Setting Component**: Development of the component responsible for setting the timer.
-- **Animation Component**: Integration of the `react-countdown-circle-timer` package for animated countdown circles.
-- **SettingsContext**: Creation of a state management component using the Context Hook.
-- **Using SettingsContext**: Distributing information to other components using the context.
+- **Timer Component**: Integration of the `react-countdown-circle-timer` package for animated countdown circles.
+- **Context**: Creation of a state management component using the Context Hook.
+- **Using Context**: Distributing information to other components using the context.
 - **Debugging Package**: Fixing the NaN error and addressing issues with circle animation.
 - **Running Function onload**: Utilizing the `useEffect` hook to run functions once the React component has mounted.
 - **Outro**: A final overview of the application.
