@@ -1,0 +1,108 @@
+.settings-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  gap: 25px; /* You can adjust the value to control the space between items */
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Updated to column direction */
+  align-items: center;
+}
+
+input {
+  background-color: #0c0e1b;
+  color: #c9cce9;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+label {
+  color: #c9cce9;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.button-group {
+  text-align: center;
+}
+
+#set {
+  background-color: #0c0e1b;
+  color: #c9cce9;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-left: 46%;
+  margin-top: 3%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* Media query for tablets */
+@media only screen and (max-width: 768px) {
+.settings-container {
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+#set {
+  margin-left: 43%;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.input-group{
+  margin-top: 60px;
+}
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 480px) {
+input {
+  width: 80px;
+  height: 80px;
+  font-size: 16px;
+}
+.input-group{
+  margin-top: 20px;
+}
+#set {
+  margin-left: 38%;
+}
+}
+/* Media query for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.settings-container {
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+#set {
+  margin-left: 43%;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.input-group {
+  margin-top: 60px;
+}
+}  

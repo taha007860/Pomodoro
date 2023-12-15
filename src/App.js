@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+// App.js
+import React, {useState} from 'react';
+import { Provider } from './components/Context';
+import Settings from './components/Settings';
+import Timer from './components/Timer';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [showSettings, setShowSettings] = useState(false);
+  
+
+  const showSettingsHandler = () => {
+    setShowSettings(true);
+  };
+
+  const closeSettingsHandler = () => {
+    setShowSettings(false);
+    
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider>
+      <div className="app-container">
+        <div className='heading'>
+          <h1>Pomodoro</h1>
+          <small>Be productive the right way.</small>
+        </div>
+        {!showSettings && (
+          <div>
+            <Timer onSettingsClick={showSettingsHandler} />
+          </div>
+        )}
+        {showSettings && (
+          <Settings onCloseSettings={closeSettingsHandler} />
+        )}
+      </div>
+    </Provider>
   );
-}
+};
 
 export default App;
