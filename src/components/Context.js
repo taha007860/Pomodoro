@@ -11,12 +11,12 @@ export const Provider = ({ children }) => {
   const [timerKey, setTimerKey] = useState(0);
   const [currentMode, setCurrentMode] = useState('');
   const [buttonColors, setButtonColors] = useState({
-    work: '',
+    work: '#FE6F6B',
     shortBreak: '',
     longBreak: '',
   });
   const [textColors, setTextColors] = useState({
-    work: '',
+    work: 'black',
     shortBreak: '',
     longBreak: '',
   });

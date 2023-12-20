@@ -46,7 +46,7 @@ const Timer = ({ onSettingsClick }) => {
       case 'longBreak':
         return longBreakTime;
       default:
-        return currentMode;
+        return pomodoroTime;
     }
   };
 
